@@ -1,0 +1,127 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Welcome Page */
+.welcome-page {
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.welcome-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.start-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: white;
+    color: #4e54c8;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.start-btn:hover {
+    background: #ddd;
+}
+
+/* Task Page */
+.task-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.task-input {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.task-input input, .task-input button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.task-input button {
+    background: #4e54c8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background: #3a3fb5;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#taskList li {
+    background: #f4f4f4;
+    padding: 12px;
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    flex-wrap: wrap;
+}
+
+.task-actions button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.done-btn { background: green; color: white; }
+.reschedule-btn { background: orange; color: white; }
+.delete-btn { background: red; color: white; }
+
+/* Responsive */
+@media (max-width: 600px) {
+    .task-input {
+        flex-direction: column;
+    }
+}
+
+
+/* ===== TASK PAGE ===== */
+.task-page {
+    /* New gradient background */
+    background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+    min-height: 100vh;
+    padding: 20px;
+
+    /* Make sure content is centered nicely */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.task-container {
+    max-width: 700px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Transparent white card */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+
+
